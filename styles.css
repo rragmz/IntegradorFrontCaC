@@ -164,6 +164,11 @@ footer .nav{
 }
 
 @media(max-width: 768px){
+
+    .navbar{
+        padding: 10px;
+    }
+    
     .texto-presentacion{
         width: 90%;
         left: 0;
@@ -180,4 +185,6 @@ footer .nav{
     .div-der button{
         font-size: 0.8rem;
     }
+
+
 }
