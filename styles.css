@@ -167,8 +167,9 @@ footer .nav{
 
     .navbar{
         padding: 10px;
+        margin: 0;
     }
-    
+
     .texto-presentacion{
         width: 90%;
         left: 0;
