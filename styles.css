@@ -72,11 +72,15 @@ h2 span{
     font-size: 0.9rem;
 }
 
+.skills{
+    display: flex;
+}
 .card-body button{
+    width: 30%;
     height: 1.5rem;
     font-weight: bold;
     padding: 0rem 0.2rem;
-    margin: 0;
+    margin-right: 5px;
     font-size: 0.9rem;
 }
 
@@ -119,7 +123,7 @@ h2 span{
 .container-fluid{
     width: 100%;
 }
-.formulario{
+.formulario, .form-sale{
     width: 60%;
     margin-left: 20%;
 }
@@ -132,10 +136,10 @@ h2 span{
 }
 
 .nombre-apellido .mb-3{
-    width: 50%;
+    width: 49%;
 }
 
-#enviar{
+#enviar, #borrar, #resumen{
     background-color: #8fc453;
     border: 1px solid #8fc453;
 }
@@ -143,9 +147,64 @@ h2 span{
     background-color: #5b7a36;
 }
 
+#cards{
+    height: auto;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    margin: 7% 0 2% 18%;
+    align-items: center;
+
+}
+
+#cards .card{
+    margin: 0 4%;
+    text-align: center; 
+}
+
+.card-body{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card-subtitle{
+    font-weight: bold;
+}
+
+.blue{
+    border: 1px solid blue;
+}
+
+.lightblue{
+    border: 1px solid #2196aa;
+}
+
+.orange{
+    border: 1px solid orange;
+}
+.cantidad-categoria{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons-sale{
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons-sale button{
+    width: 49%;
+}
+
 footer .nav{
     background-color: rgb(19, 52, 71);
-    margin: 1rem 0 0 0;
+    margin: 2rem 0 0 0;
     padding: 1.5rem;
 }
 
@@ -187,5 +246,8 @@ footer .nav{
         font-size: 0.8rem;
     }
 
-
+    #cards{
+        margin-left: 15%;
+        flex-direction: column;
+    }
 }

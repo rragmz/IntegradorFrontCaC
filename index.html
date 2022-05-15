@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="container-fluid">
-             <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+             <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark ">
             <div class="container-fluid">
                 <div class="left">
                     <a class="navbar-brand" href="#">
@@ -65,8 +65,10 @@
                     <div class="card m-2 bg-body rounded shadow-lg p-2 mb-3" style="width: 18rem;">
                         <img src="images/steve.jpg" class="card-img-top" alt="Steve Jobs">
                         <div class="card-body">
-                            <button type="button" class="btn btn-warning">JavaScript</button>
-                            <button type="button" class="btn btn-primary">React</button>
+                            <div class="skills">
+                                <button type="button" class="btn btn-warning">JavaScript</button>
+                                <button type="button" class="btn btn-primary">React</button>
+                            </div>
                           <h5 class="card-title">Steve Jobs</h5>
                           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolore, fugiat laboriosam, veritatis voluptas sint quos suscipit, doloremque ut expedita voluptates. Magni nulla eveniet fugit iusto nesciunt autem officiis sint.</p>
                         </div>
@@ -74,8 +76,10 @@
                     <div class="card m-2 bg-body rounded shadow-lg p-2 mb-3" style="width: 18rem;">
                       <img src="images/bill.jpg" class="card-img-top" alt="Bill Gates">
                       <div class="card-body">
-                          <button type="button" class="btn btn-warning">JavaScript</button>
-                          <button type="button" class="btn btn-primary">React</button>
+                          <div class="skills">
+                              <button type="button" class="btn btn-warning">JavaScript</button>
+                              <button type="button" class="btn btn-primary">React</button>
+                          </div>
                         <h5 class="card-title">Bill Gates</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quod aperiam sint quas? Aliquid, eum facilis. Pariatur nesciunt maiores, ut debitis itaque laboriosam accusamus eum tempora placeat, voluptatibus officiis labore.</p>
                       </div>
@@ -84,8 +88,10 @@
                     <div class="card m-2 bg-body rounded shadow-lg p-2 mb-3" style="width: 18rem;">
                       <img src="images/ada.jpeg" class="card-img-top" alt="Ada Lovelace">
                       <div class="card-body">
-                          <button type="button" class="btn btn-secondary">Negocios</button>
-                          <button type="button" class="btn btn-danger">Startups</button>
+                          <div class="skills">
+                              <button type="button" class="btn btn-secondary">Negocios</button>
+                              <button type="button" class="btn btn-danger">Startups</button>
+                          </div>
                         <h5 class="card-title">Ada Lovelace</h5>
                         <p class="card-text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed assumenda architecto mollitia iste nam odio, totam obcaecati expedita doloremque, beatae ullam eaque dolores facere officiis explicabo deleniti aperiam temporibus consequuntur.</p>
                       </div>
@@ -129,6 +135,84 @@
                   </div>
             </div>
         </div>
+
+       <div class="container-fluid">
+            <section id="comprar-tk">
+                <section id="cards">
+                    <div class="card blue" style="width: 13rem; height: 12rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Estudiante</h5>
+                          <p class="card-text">Tienen un descuento</p>
+                          <h6 class="card-subtitle mb-2">80%</h6>
+                          <p class="card-text"><small class="text-muted">* presentar documentación</small></p>
+                        </div>
+                    </div>
+                    <div class="card lightblue" style="width: 13rem; height: 12rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Trainee</h5>
+                          <p class="card-text">Tienen un descuento</p>
+                          <h6 class="card-subtitle mb-2">50%</h6>
+                          <p class="card-text"><small class="text-muted">* presentar documentación</small></p>
+                        </div>
+                    </div>
+                    <div class="card orange" style="width: 13rem; height: 12rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Junior</h5>
+                        <p class="card-text">Tienen un descuento</p>
+                        <h6 class="card-subtitle mb-2">15%</h6>
+                        <p class="card-text"><small class="text-muted">* presentar documentación</small></p>
+                    </div>
+                    </div>
+                </section>
+                <h6 style="text-align: center; margin: 0 0 1% 0; font-weight: lighter;">VENTA</h6>
+                <h2 style="margin-top: 0%;"><span>VENTA DE TICKET $200</span></h2>
+                <section class="form-sale">
+                    <div class="nombre-apellido">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label"></label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                        </div>
+                      <div class="mb-3">
+                        <label for="apellido" class="form-label"></label>
+                        <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                      </div>
+                    </div>
+                    <div class="email mb-3">
+                        <label for="email" class="form-label"></label>
+                        <input type="email" class="form-control" id="email" placeholder="Correo">
+                    </div>
+                    <div class="cantidad-categoria">
+                        <div class="mb-3" style="width: 49%;">
+                            <label for="cantidad">Cantidad</label>
+                            <select id="cantidad" class="form-select" aria-label="Default select example">
+                                <optiondisabled>Cantidad</optiondisabled>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="mb-3" style="width: 49%;">
+                            <label for="categoria">Categoria</label>
+                            <select id="categoria" class="form-select" aria-label="Default select example">
+                                <option value="estudiante">Estudiante</option>
+                                <option value="trainee">Trainee</option>
+                                <option value="junior">Junior</option>
+                                <option value="general">General</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="alert alert-primary" style="margin-top:3%;">
+                        <h6 id="total" style="margin:0;">Total a Pagar: $</h6>
+                    </div>
+                    <div class="buttons-sale">
+                        <button class="btn btn-primary" type="button" id="borrar">Borrar</button>
+                        <button class="btn btn-primary" type="button" id="resumen">Resumen</button>
+                    </div>
+                </section>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="container-fluid">
@@ -159,5 +243,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
