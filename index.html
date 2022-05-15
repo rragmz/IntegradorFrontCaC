@@ -29,16 +29,16 @@
                                 <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Los oradores</a>
+                                <a class="nav-link" href="#oradores">Los oradores</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">El lugar y la fecha</a>
+                                <a class="nav-link" href="#lugar">El lugar y la fecha</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Conviértete en orador</a>
+                                <a class="nav-link" href="#seOrador">Conviértete en orador</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link green" href="#">Comprar tickets</a>
+                                <a class="nav-link green" href="#comprar">Comprar tickets</a>
                             </li>
                         </ul>
                     </div>
@@ -58,8 +58,8 @@
         </div>
     </header>
     <main>
-        <h2>CONOCE A LOS <br><span>ORADORES</span></h2>
-        <div class="container-fluid">
+        <h2 id="oradores">CONOCE A LOS <br><span>ORADORES</span></h2>
+        <div class="container-fluid" >
             <div class="card-fluid">
                 <div class="card-group w-75 mx-auto">
                     <div class="card m-2 bg-body rounded shadow-lg p-2 mb-3" style="width: 18rem;">
@@ -99,7 +99,7 @@
                   </div>
             </div>
         </div>
-        <section class="container-fluid">
+        <section id="lugar" class="container-fluid">
             <div class="row">
                 <div class="col-6 div-izq">
                 </div>
@@ -111,7 +111,7 @@
             </div>
         </section>
 
-        <div class="container-fluid">
+        <div id="seOrador" class="container-fluid">
             <h2>CONVIÉRTETE EN UN <br><span>ORADOR</span></h2>
             <p class="anotarse">Anótate como un orador para dar una <span>charla ignite</span>. Cuéntanos de qué quieres hablar!</p>
             <div class="formulario">
@@ -135,11 +135,10 @@
                   </div>
             </div>
         </div>
-
-       <div class="container-fluid">
+       <div id="comprar" class="container-fluid">
             <section id="comprar-tk">
                 <section id="cards">
-                    <div class="card blue" style="width: 13rem; height: 12rem;">
+                    <div class="card blue">
                         <div class="card-body">
                           <h5 class="card-title">Estudiante</h5>
                           <p class="card-text">Tienen un descuento</p>
@@ -147,7 +146,7 @@
                           <p class="card-text"><small class="text-muted">* presentar documentación</small></p>
                         </div>
                     </div>
-                    <div class="card lightblue" style="width: 13rem; height: 12rem;">
+                    <div class="card lightblue">
                         <div class="card-body">
                           <h5 class="card-title">Trainee</h5>
                           <p class="card-text">Tienen un descuento</p>
@@ -155,7 +154,7 @@
                           <p class="card-text"><small class="text-muted">* presentar documentación</small></p>
                         </div>
                     </div>
-                    <div class="card orange" style="width: 13rem; height: 12rem;">
+                    <div class="card orange">
                     <div class="card-body">
                         <h5 class="card-title">Junior</h5>
                         <p class="card-text">Tienen un descuento</p>
@@ -164,8 +163,8 @@
                     </div>
                     </div>
                 </section>
-                <h6 style="text-align: center; margin: 0 0 1% 0; font-weight: lighter;">VENTA</h6>
-                <h2 style="margin-top: 0%;"><span>VENTA DE TICKET $200</span></h2>
+                <h6 id="venta">VENTA</h6>
+                <h2 class="sale-title" ><span>VENTA DE TICKET $200</span></h2>
                 <section class="form-sale">
                     <div class="nombre-apellido">
                         <div class="mb-3">
@@ -182,7 +181,7 @@
                         <input type="email" class="form-control" id="email" placeholder="Correo">
                     </div>
                     <div class="cantidad-categoria">
-                        <div class="mb-3" style="width: 49%;">
+                        <div class="mb-3">
                             <label for="cantidad">Cantidad</label>
                             <select id="cantidad" class="form-select" aria-label="Default select example">
                                 <optiondisabled>Cantidad</optiondisabled>
@@ -193,7 +192,7 @@
                                 <option value="5">5</option>
                             </select>
                         </div>
-                        <div class="mb-3" style="width: 49%;">
+                        <div class="mb-3" >
                             <label for="categoria">Categoria</label>
                             <select id="categoria" class="form-select" aria-label="Default select example">
                                 <option value="estudiante">Estudiante</option>
@@ -203,8 +202,8 @@
                             </select>
                         </div>
                     </div>
-                    <div class="alert alert-primary" style="margin-top:3%;">
-                        <h6 id="total" style="margin:0;">Total a Pagar: $</h6>
+                    <div class="alert alert-primary">
+                        <h6 id="total">Total a Pagar: $</h6>
                     </div>
                     <div class="buttons-sale">
                         <button class="btn btn-primary" type="button" id="borrar">Borrar</button>

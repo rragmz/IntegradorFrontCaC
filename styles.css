@@ -135,7 +135,7 @@ h2 span{
     justify-content: space-between;
 }
 
-.nombre-apellido .mb-3{
+.nombre-apellido .mb-3, .cantidad-categoria .mb-3{
     width: 49%;
 }
 
@@ -158,6 +158,8 @@ h2 span{
 }
 
 #cards .card{
+    width: 13rem; 
+    height: 12rem;
     margin: 0 4%;
     text-align: center; 
 }
@@ -183,6 +185,16 @@ h2 span{
 .orange{
     border: 1px solid orange;
 }
+
+#venta{
+    text-align: center; 
+    margin: 0 0 1% 0; 
+    font-weight: lighter;
+}
+
+.sale-title{
+    margin-top: 0;
+}
 .cantidad-categoria{
     width: 100%;
     display: flex;
@@ -190,6 +202,13 @@ h2 span{
     justify-content: space-between;
 }
 
+.alert .alert-primary{
+    margin-top: 3%;
+}
+
+#total{
+    margin: 0;
+}
 .buttons-sale{
     width: 100%;
     margin-top: 5%;
